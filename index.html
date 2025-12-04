@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev AC • Fridge • Washing Machine Repair | Expert Home Service | Jeerota</title>
+    <meta name="description" content="Fast & affordable AC, fridge & washing machine repair. Doorstep service, same-day repair, 100% satisfaction. Call 9672807103.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary-blue: #0066cc;
+            --dark-blue: #004a99;
+            --light-blue: #e8f2ff;
+            --white: #ffffff;
+            --light-grey: #f8fafc;
+            --medium-grey: #e4e7eb;
+            --dark-grey: #2d3748;
+            --text-dark: #1a202c;
+            --text-light: #718096;
+            --accent: #0088ff;
+            --success: #10b981;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.12);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: var(--dark-blue);
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--dark-blue);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-blue);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+            gap: 10px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--light-blue);
+            transform: translateY(-2px);
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 1.3rem;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+        }
+        
+        .logo-text span {
+            color: var(--primary-blue);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            cursor: pointer;
+        }
+        
+        /* UPDATED: Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 80, 158, 0.95) 0%, rgba(0, 102, 204, 0.9) 100%), url('https://images.unsplash.com/photo-1621967299229-c6e7085b7d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            border-radius: 50%;
+            top: -150px;
+            right: -150px;
+            opacity: 0.1;
+        }
+        
+        .hero:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--primary-blue);
+            border-radius: 50%;
+            bottom: -100px;
+            left: -100px;
+            opacity: 0.1;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+        
+        .floating-element:nth-child(3) {
+            width: 30px;
+            height: 30px;
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* Stats Section */
+        .stats {
+            background-color: var(--white);
+            padding: 60px 0;
+            border-bottom: 1px solid var(--medium-grey);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .stat-card h3 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        
+        .experience-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-md);
+            z-index: 2;
+        }
+        
+        .about-img-placeholder {
+            background-color: var(--light-blue);
+            height: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .feature-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .feature-icon {
+            background-color: var(--light-blue);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light-grey);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 35px 25px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            text-align: center;
+            border-top: 4px solid var(--primary-blue);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .service-icon {
+            font-size: 2.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        /* Highlights Section */
+        .highlights {
+            background-color: var(--white);
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .highlight-card {
+            background: var(--white);
+            padding: 30px 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid var(--medium-grey);
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-blue);
+        }
+        
+        .highlight-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        .highlight-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        
+        .highlight-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background-color: var(--light-grey);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: var(--shadow-sm);
+            z-index: 2;
+        }
+        
+        .pricing-header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .pricing-body {
+            padding: 30px;
+        }
+        
+        .price {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: normal;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--medium-grey);
+            display: flex;
+            align-items: center;
+            color: var(--text-dark);
+        }
+        
+        .pricing-features li:before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 10px;
+            background: #d1fae5;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            background-color: var(--white);
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .review-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .review-card:before {
+            content: '"';
+            font-size: 6rem;
+            color: var(--light-blue);
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-family: Georgia, serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .review-rating {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .review-card p {
+            position: relative;
+            z-index: 1;
+            color: var(--text-dark);
+        }
+        
+        .review-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--light-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        /* UPDATED: Two-Column Contact Section */
+        .contact {
+            background-color: var(--light-grey);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        .contact-info {
+            padding: 40px;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-form {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .contact-info h3 {
+            color: var(--dark-blue);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-detail i {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-detail h4 {
+            margin-bottom: 5px;
+            color: var(--text-dark);
+        }
+        
+        .contact-detail p {
+            margin-bottom: 0;
+            color: var(--text-light);
+        }
+        
+        .service-hours {
+            background: var(--light-blue);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin-top: 30px;
+        }
+        
+        .service-hours h4 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-hours ul {
+            list-style: none;
+        }
+        
+        .service-hours li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+            color: var(--text-light);
+        }
+        
+        .service-hours li:last-child {
+            border-bottom: none;
+        }
+        
+        .form-header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .form-body {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid var(--medium-grey);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--white);
+            color: var(--text-dark);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: var(--white);
+            padding: 70px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .footer-logo span {
+            color: var(--primary-blue);
+        }
+        
+        .footer-about p {
+            color: #a0aec0;
+        }
+        
+        .footer-contact h3, .footer-services h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            color: #a0aec0;
+        }
+        
+        .footer-contact i {
+            margin-right: 12px;
+            color: var(--primary-blue);
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+        
+        .footer-services p {
+            color: #a0aec0;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .footer-services p:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #718096;
+        }
+        
+        /* Sticky Contact Buttons */
+        .sticky-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .sticky-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        
+        .sticky-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .sticky-call {
+            background-color: var(--primary-blue);
+        }
+        
+        .sticky-whatsapp {
+            background-color: #25D366;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-img {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 76px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 25px 0;
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 160px 0 100px;
+                background-attachment: scroll;
+            }
+            
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .sticky-contact {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .sticky-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+            
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info, .form-body {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .experience-badge {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .service-card, .highlight-card, .review-card, .feature-item {
+                padding: 25px 20px;
+            }
+        }
+        
+        /* Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="logo-text">Dev<span>Repair</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#highlights">Why Us</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- UPDATED: Enhanced Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container animate__animated animate__fadeIn">
+            <h1>Fast & Affordable AC, Fridge & Washing Machine Repair</h1>
+            <p>Doorstep service • Same Day Repair • 100% Satisfaction Guaranteed</p>
+            <div class="hero-btns">
+                <a href="tel:+919672807103" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Call Now: 9672807103
+                </a>
+                <a href="https://wa.me/919672807103" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="12">0+</div>
+                    <h3>Years Experience</h3>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="3500">0+</div>
+                    <h3>Happy Customers</h3>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="98">0%</div>
+                    <h3>Satisfaction Rate</h3>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-count="45">0</div>
+                    <h3>Minutes Response Time</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-img animate-on-scroll">
+                    <div class="experience-badge">12+ Years Experience</div>
+                    <div class="about-img-placeholder">
+                        <div style="text-align: center; padding: 20px;">
+                            <i class="fas fa-tools" style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 20px;"></i>
+                            <h3 style="color: var(--dark-blue);">Professional Technician</h3>
+                            <p style="font-weight: 600; color: var(--dark-blue);">Ajay Singh</p>
+                            <p style="color: var(--text-light);">Expert AC, Fridge & Washing Machine Repair</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Expert Repair Services by Ajay Singh</h3>
+                    <p>With over 12 years of hands-on experience in appliance repair, I'm committed to providing fast, reliable, and affordable repair services for ACs, refrigerators, and washing machines in Jeerota and surrounding areas.</p>
+                    <p>My approach combines technical expertise with honest service, ensuring your appliances are fixed quickly and efficiently with genuine spare parts and a satisfaction guarantee.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4>Fast Service</h4>
+                            <p>Same-day service for urgent repairs</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Expert Technician</h4>
+                            <p>Certified with 12+ years experience</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <h4>Affordable</h4>
+                            <p>Fair pricing with no hidden charges</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Guaranteed Work</h4>
+                            <p>90-day warranty on all repairs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>AC Repair</h3>
+                    <p>Professional AC repair, gas filling, and maintenance services for all brands including Daikin, Voltas, LG, Samsung.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3>Fridge Repair</h3>
+                    <p>Comprehensive refrigerator repair including cooling issues, compressor problems, and thermostat repair.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <h3>Washing Machine Repair</h3>
+                    <p>Repair all types of washing machines - top load, front load, semi & fully automatic from all major brands.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Installation</h3>
+                    <p>Professional installation and uninstallation of ACs, refrigerators and washing machines with proper setup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Same-Day Service</h3>
+                    <p>Urgent repairs completed on the same day</p>
+                </div>
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Trained Technician</h3>
+                    <p>Certified expert with 12+ years experience</p>
+                </div>
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Genuine Spare Parts</h3>
+                    <p>High-quality original spare parts used</p>
+                </div>
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent pricing with no hidden costs</p>
+                </div>
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>All Brands Supported</h3>
+                    <p>Samsung, LG, Whirlpool, Voltas, Daikin & more</p>
+                </div>
+                <div class="highlight-card animate-on-scroll">
+                    <div class="highlight-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Doorstep Service</h3>
+                    <p>We come to you - no need to bring appliances</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Service Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Basic Service</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">₹299<span> / service</span></div>
+                        <ul class="pricing-features">
+                            <li>General Checkup & Diagnosis</li>
+                            <li>Basic Cleaning</li>
+                            <li>Minor Repairs</li>
+                            <li>30-Day Service Warranty</li>
+                            <li>Free Visit (Within Jeerota)</li>
+                        </ul>
+                        <a href="https://wa.me/919672807103?text=Hi,%20I'm%20interested%20in%20Basic%20Service" target="_blank" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <div class="pricing-card popular animate-on-scroll">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Deep Service</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">₹599<span> / service</span></div>
+                        <ul class="pricing-features">
+                            <li>Complete Deep Cleaning</li>
+                            <li>Internal Parts Check</li>
+                            <li>Lubrication & Calibration</li>
+                            <li>60-Day Service Warranty</li>
+                            <li>Free Visit (10km radius)</li>
+                        </ul>
+                        <a href="https://wa.me/919672807103?text=Hi,%20I'm%20interested%20in%20Deep%20Service" target="_blank" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Gas Refill</h3>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">₹999<span> onwards</span></div>
+                        <ul class="pricing-features">
+                            <li>Gas Pressure Check</li>
+                            <li>Leakage Test</li>
+                            <li>Gas Refilling</li>
+                            <li>90-Day Service Warranty</li>
+                            <li>Free Basic Cleaning</li>
+                        </ul>
+                        <a href="https://wa.me/919672807103?text=Hi,%20I'm%20interested%20in%20Gas%20Refill" target="_blank" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: var(--text-light); font-size: 0.95rem;">Note: Repair charges extra. Final price determined after diagnosis. Contact for exact pricing.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card animate-on-scroll">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Ajay repaired my AC same day when no one else was available. Professional service at reasonable price. Highly recommended!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <h4>Ramesh Kumar</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card animate-on-scroll">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"My washing machine was making strange noise. Ajay identified the problem quickly and fixed it at minimal cost. Great service!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">PS</div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card animate-on-scroll">
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Refrigerator cooling issue resolved within hours. Genuine spare parts used. Satisfied with the service and warranty provided."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">AS</div>
+                        <div>
+                            <h4>Anil Singh</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED: Two-Column Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Book Service Now</h2>
+            <div class="contact-container">
+                <!-- Left Column: Contact Information -->
+                <div class="contact-info animate-on-scroll">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us Anytime</h4>
+                                <p>9672807103</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp Message</h4>
+                                <p>9672807103</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Opposite Govt School, Jeerota – 302022</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Service Owner</h4>
+                                <p>Ajay Singh</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-hours">
+                        <h4><i class="fas fa-clock"></i> Service Hours</h4>
+                        <ul>
+                            <li><strong>Monday - Saturday:</strong> 8:00 AM - 9:00 PM</li>
+                            <li><strong>Sunday:</strong> 9:00 AM - 8:00 PM</li>
+                            <li><strong>Emergency Service:</strong> Available 24/7</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4>Why Book With Us?</h4>
+                        <p style="font-size: 0.95rem;">Quick response, professional service, genuine parts, and satisfaction guarantee. We provide free diagnosis for all repair services.</p>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form animate-on-scroll">
+                    <div class="form-header">
+                        <h3>Quick Service Request</h3>
+                        <p>Fill this form for immediate response</p>
+                    </div>
+                    <div class="form-body">
+                        <form id="serviceForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" class="form-control" required placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number *</label>
+                                    <input type="tel" id="mobile" class="form-control" required placeholder="10-digit mobile number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location *</label>
+                                <input type="text" id="location" class="form-control" required placeholder="Your complete address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appliance">Appliance Type *</label>
+                                    <select id="appliance" class="form-control" required>
+                                        <option value="">Select Appliance</option>
+                                        <option value="AC">Air Conditioner</option>
+                                        <option value="Fridge">Refrigerator</option>
+                                        <option value="Washing Machine">Washing Machine</option>
+                                        <option value="Other">Other Appliance</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgency">Service Urgency</label>
+                                    <select id="urgency" class="form-control">
+                                        <option value="Normal">Normal (Within 24 hours)</option>
+                                        <option value="Urgent">Urgent (Same Day)</option>
+                                        <option value="Emergency">Emergency (Within 2 hours)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="problem">Problem Description *</label>
+                                <textarea id="problem" class="form-control" placeholder="Briefly describe the issue with your appliance..." required rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px; font-size: 1.1rem;">
+                                <i class="fab fa-whatsapp"></i> Send Inquiry via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Dev<span>Repair</span></div>
+                    <p>Professional repair services for ACs, refrigerators, and washing machines. Fast, reliable, and affordable doorstep service in Jeerota and surrounding areas.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919672807103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919672807103" title="Call"><i class="fas fa-phone-alt"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone-alt"></i> 9672807103</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: 9672807103</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Opposite Govt School, Jeerota – 302022</p>
+                    <p><i class="fas fa-user"></i> Owner: Ajay Singh</p>
+                    <p><i class="fas fa-clock"></i> Service Hours: 8 AM - 9 PM (7 Days)</p>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <p>AC Repair & Gas Filling</p>
+                    <p>Fridge Repair</p>
+                    <p>Washing Machine Repair</p>
+                    <p>Installation & Uninstallation</p>
+                    <p>Regular Maintenance</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <script>document.write(new Date().getFullYear());</script>
+ Dev AC • Fridge • Washing Machine Repair. All rights reserved.</p>
+                <b>Design by <a href="" style="color:white">ITHub Software Company</a></b>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Contact Buttons -->
+    <div class="sticky-contact">
+        <a href="tel:+919672807103" class="sticky-btn sticky-call">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/919672807103" target="_blank" class="sticky-btn sticky-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // WhatsApp Form Submission
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const location = document.getElementById('location').value;
+            const appliance = document.getElementById('appliance').value;
+            const urgency = document.getElementById('urgency').value;
+            const problem = document.getElementById('problem').value;
+            
+            // Create WhatsApp message
+            const message = `New Service Inquiry:%0A%0AName: ${name}%0AMobile: ${mobile}%0ALocation: ${location}%0AAppliance: ${appliance}%0AUrgency: ${urgency}%0AProblem: ${problem}`;
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/919672807103?text=${message}`, '_blank');
+            
+            // Reset form
+            this.reset();
+            
+            // Show confirmation
+            alert('Opening WhatsApp to send your inquiry...');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.08)';
+            }
+        });
+        
+        // Animate on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if(elementPosition < screenPosition) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // Counter animation for stats
+        function animateCounter() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText.replace('+', '').replace('%', '');
+                const increment = target / speed;
+                
+                if(count < target) {
+                    counter.innerText = Math.ceil(count + increment).toLocaleString() + 
+                                      (counter.getAttribute('data-count').includes('+') ? '+' : 
+                                       counter.getAttribute('data-count').includes('%') ? '%' : '');
+                    setTimeout(animateCounter, 1);
+                } else {
+                    counter.innerText = target.toLocaleString() + 
+                                      (counter.getAttribute('data-count').includes('+') ? '+' : 
+                                       counter.getAttribute('data-count').includes('%') ? '%' : '');
+                }
+            });
+        }
+        
+        // Floating elements animation
+        const floatingElements = document.querySelectorAll('.floating-element');
+        floatingElements.forEach((el, index) => {
+            el.style.animationDelay = `${index * 2}s`;
+        });
+        
+        // Initialize animations
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', () => {
+            animateOnScroll();
+            
+            // Start counter animation when stats section is visible
+            const statsSection = document.querySelector('.stats');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        animateCounter();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            if(statsSection) {
+                observer.observe(statsSection);
+            }
+        });
+    </script>
+</body>
+</html>
